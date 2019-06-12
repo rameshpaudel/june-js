@@ -42,7 +42,7 @@ console.log("Type of Object" ,typeof testObj);
 //-----------------------------------------------------------
 // Loops
 //for(initializer; condition ; expression)
-for(var i = 0; i < 10; i = i+2){
+for(let i = 0; i < 10; i = i+2){
     console.log("Value from the loop",i);
 }
 
@@ -82,17 +82,30 @@ var anotherArr = [
 // console.log("The first value of arr", arr[0], arr[1])
 // console.log("The second array", anotherArr[0], anotherArr[1])
 
-for(var i = 0; i < anotherArr.length; i++){
+for(let i = 0; i < anotherArr.length; i++){
     console.log("Index Position "+ (i + 1), anotherArr[i]);
 }
 
-
-
-for(var i = 0; i < 10; i+=2){
-    console.warn(i);
-}
+//i = i + 2
+//i+=2
 
 
 
+
+
+// Print 1 to 100
+
+// Initialize a variable with intial value
+// Final value
+
+//Matching a condition
+
+//Applying in a loop
+
+
+//Output each number in a line
+// for(var i = 0; i < 100; i+2){
+    
+// }
 
 
