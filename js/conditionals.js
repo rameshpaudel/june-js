@@ -77,7 +77,8 @@ if(0 === false) console.log("This is not true because of the difference in data 
         alert("Enter number only. You entered invalid type of data")
         // askStudentInfo();
     }
-
+    var nameList = [];
+    var ageList = [];
     for(var i = 0; i < numOfUsers; i++){
         var name = prompt("Enter the name of student");
         var age = prompt("Enter the age of student");
