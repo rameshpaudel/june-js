@@ -16,14 +16,14 @@ function substract(a, b) {
 
 //Asks user for correct input
 //Runs infinitly until the user inputs integer
-function askUserForCorrectInput(){
-    var numOfUsers = prompt("ENter the no of users");
+function askUserForCorrectInput(question = "Enter the no of users"){
+    let numOfUsers = prompt(question);
 
-    var conversionToInt = parseInt(numOfUsers)
+    let conversionToInt = parseInt(numOfUsers)
 
     if (isNaN(conversionToInt)) {
         alert("Enter number only. You entered invalid type of data")
-        askUserForCorrectInput();
+        askUserForCorrectInput(question);
     }
     return conversionToInt;
 }
@@ -48,15 +48,13 @@ function getStudentData() {
     var ageList = [];
     for (var i = 0; i < numOfUsers; i++) {
         var name = prompt("Enter the name of student");
-        var age = prompt("Enter the age of student");
-        var marks = prompt("Enter the age of student");
-        if(!checkIfInteger(age)){
-            alert("Age is not a number")
-        }
-        
-        console.log("Name of " + (i + 1) + " student : " + name)
+        var age = askUserForCorrectInput("Enter the age of student");
+        var marks = askUserForCorrectInput("Enter the marks of student");
+      
+                console.log("Name of " + (i + 1) + " student : " + name)
         console.log("Age of " + (i + 1) + " student : " + age)
+        console.log("Marks of " + (i + 1) + " student : " + marks)
     }
 }
 
-// getStudentData();
+getStudentData();
