@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript DOM Basics</title>
+    <style>
+        .test{
+            background: red;
+            padding:4rem;
+        }
+        h1{
+            transition: all 0.5s linear;    
+        }
+    </style>
+</head>
+<body>
+    <h1>Document Object Model Basics</h1>
+    
+    <div id="first">
+        <h2>Test this container</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae magni, eos repellendus similique minus expedita laborum accusamus quibusdam qui tenetur.</p>
+        <a href="#">Click Here</a>
+    </div>
+    
+    <h1>Object Model Basics</h1>
+    <div class="container">
+        <h2>Second container</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae magni, eos repellendus similique minus expedita laborum accusamus quibusdam qui tenetur.</p>
+        <a href="#">Click Here</a>
+    </div>
+    <h1>Model Basic</h1>
+    <div class="container" onclick="containerClicked(this)">
+            <h2>Third container</h2>
+        <p>Dolor sit amet consectetur adipisicing elit. Vitae magni, eos repellendus similique minus expedita laborum accusamus quibusdam qui tenetur.</p>
+        <a href="#">Click Here</a>
+    </div>
+    <div class="container" onclick="containerClicked(this)">
+        <h2>Dhirtainer</h2>
+        <p>Dolor sit amet c elit. Vitae magni, eos repellendus similique minus expedita laborum accusamus quibusdam qui tenetur.</p>
+        <a href="#">Click Here</a>
+    </div>
+    <div class="container" onclick="containerClicked(this)">
+        <h2>Thirner</h2>
+        <p>Dolor sit amet cmagni, eos repellendus similique minus expedita laborum accusamus quibusdam qui tenetur.</p>
+        <a href="#">Click Here</a>
+    </div>
+
+    <script src="js/dom.js"></script>
+</body>
+</html>

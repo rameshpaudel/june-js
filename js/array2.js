@@ -78,6 +78,8 @@ var multiArr = [
     [3,4,5]
 ]
 
+//Foreach returns undefined 
+
 var multiLoopData = multiArr.forEach(function(value,index){
 
     let mappedData = value.map(function(data,position){
@@ -101,3 +103,25 @@ var allObjs = {
     dob: '2019-10-12',
     ...studentList[0],
 }
+
+
+
+[
+    {
+        name: "Ram",
+        math: 20,
+        sciene: 10,
+        english:30
+    },
+    {
+        name: "Harry",
+        math: 20,
+        sciene: 10,
+        english:30
+    }
+];
+
+
+setTimeout(function(){
+    console.log(Date())
+},1000);
