@@ -51,9 +51,10 @@ console.log(allContainers)
 
 
 
-heading.onmouseover = function(){
+// heading.onmouseover = 
+heading.addEventListener('mouseover', function(e){
     console.log("Hovering the tag")
-}
+})
 
 heading.onclick = function(e){
     console.log(e)
@@ -61,3 +62,9 @@ heading.onclick = function(e){
     let clickedElement = e.srcElement
     console.log(clickedElement.style="padding: 20px")
 }
+
+var test = {
+    name: "Test"
+}
+
+test.fullName = "Something"
