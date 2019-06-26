@@ -68,3 +68,14 @@ var test = {
 }
 
 test.fullName = "Something"
+
+window.onscroll = function(e){
+    console.log(window.scrollY)
+
+    // console.log(e.srcElement.children[0].children[1].children[0].scrollHeight)
+    if(window.scrollY  > 500){
+        heading.style = 'position: fixed;background: #ccc; top:'+ (window.scrollY /2  -500)+'px;left:0;right:0;bottom:0'
+    }else{
+        heading.style = 'postion:relative'
+    }
+}
