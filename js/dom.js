@@ -69,8 +69,17 @@ var test = {
 
 test.fullName = "Something"
 
+
+var originalPosition = window.scrollY;
+var changedPosition = 0;
 window.onscroll = function(e){
-    console.log(window.scrollY)
+//   console.log(e)
+
+    changedPosition = window.scrollY
+    // console.log(changedPosition)
+    if (originalPosition > changedPosition){
+        console.log("Scrolling ups ")
+    }
 
     // console.log(e.srcElement.children[0].children[1].children[0].scrollHeight)
     if(window.scrollY  > 500){
@@ -80,4 +89,18 @@ window.onscroll = function(e){
     }
 }
 
+function random(i){
+    return Math.floor(Math.random()*i) +1 ;
+}
+function generateRandomBg(){
+    document.body.style= `background: rgba(${random(255)},${random(255)},${random(255)},${Math.random()})`
+}
+
+window.addEventListener('keypress',function(e){
+    console.log(e)
+    console.log(e.keyCode, e.key)
+    if(e.keyCode === 13){
+        generateRandomBg()   
+    }
+})
 

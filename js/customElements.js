@@ -1,6 +1,6 @@
 
 var container = document.createElement('div');
-container.classList.add('hello');
+container.classList.add('card');
 container.innerText = "Lorem ipsum dolor sit amet";
 
 //Creating a p tag
@@ -16,5 +16,9 @@ image.setAttribute('src','http://lorempixel.com/200/200/tech')
 //Adding the element inside another element
 container.append(paragraph, image)
 //Fetching the attribute
-console.log(container.getAttribute('class'))
+// console.log(container.getAttribute('class'))
+
+
+//Adding the container to the body
 document.body.append(container)
+
