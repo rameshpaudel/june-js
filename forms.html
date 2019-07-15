@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Forms</title>
+    <style>
+        input[type='text']{
+            display: block;
+            margin: 20px;
+        }
+        .error{
+            background: red
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>Forms </h1>
+    
+    <form method="POST">
+        <div>
+            <input type="text" id="form-name" placeholder="Name">
+            <span class="error"></span>
+        </div>
+        <div>
+            <input type="text" id="form-email" placeholder="Email">
+            <span class="error"></span>
+        </div>
+        <div>
+            <input type="text" id="form-math" placeholder="Math">
+            <span class="error"></span>
+        </div>
+        <div>
+            <input type="text" id="form-english" placeholder="English">
+            <span class="error"></span>
+        </div>
+        <div>
+            <input type="text" id="form-nepali" placeholder="Nepali">
+            <span class="error"></span>
+        </div>
+        <button>Submit</button>
+    </form>
+    
+    <script src="js/forms.js"></script>
+</body>
+</html>
