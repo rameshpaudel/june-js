@@ -19,7 +19,15 @@ function resetCurrentIndex() {
 }
 
 function changeSliderImage(src) {
+    //Adds fadeOut effect
+    currentImage.style = "opacity:0; background-color: #ededed"
+
     currentImage.setAttribute('src', src)
+    //Adds fadeIn Effect
+    currentImage.onload = function(e){
+        currentImage.style = "opacity:1; background-color: #ededed"
+    }
+
 }
 
 function slideLeft() {
